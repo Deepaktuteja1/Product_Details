@@ -1,4 +1,3 @@
-
 package com.example.demo.controller;
 
 import com.example.demo.model.ProductDTO;
@@ -9,7 +8,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.List;//
 import java.util.Optional;
 
 @RestController
@@ -47,17 +46,6 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

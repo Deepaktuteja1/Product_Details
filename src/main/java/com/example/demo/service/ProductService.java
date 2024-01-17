@@ -39,14 +39,17 @@ public class ProductService {
     }
 
     public void deleteProduct(Long id) {
+
         productRepository.deleteById(id);
     }
 
     private ProductDTO convertToDTO(Product product) {
+
         return modelMapper.map(product, ProductDTO.class);
     }
 
     private Product convertToEntity(ProductDTO productDTO) {
+
         return modelMapper.map(productDTO, Product.class);
     }
 }

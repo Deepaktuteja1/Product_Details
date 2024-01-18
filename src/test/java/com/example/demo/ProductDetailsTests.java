@@ -19,8 +19,12 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
-class ProductDetailsTest {
+
+
+
+class ProductDetailsTests{
 
 	@Mock
 	private ProductService productService;
@@ -32,7 +36,7 @@ class ProductDetailsTest {
 
 	private final ObjectMapper objectMapper = new ObjectMapper();
 
-	public ProductDetailsTest() {
+	public ProductDetailsTests() {
 		MockitoAnnotations.openMocks(this);
 		this.mockMvc = MockMvcBuilders.standaloneSetup(productController).build();
 	}
@@ -109,9 +113,15 @@ class ProductDetailsTest {
 		Long productId = 1L;
 
 		mockMvc.perform(delete("/products/{id}", productId))
-				.andExpect(status().isOk());
+				.andExpect(status().isNoContent()); // Use isNoContent() instead of isOk()
 
 		verify(productService, times(1)).deleteProduct(productId);
 		verifyNoMoreInteractions(productService);
 	}
+
 }
+
+
+
+
+

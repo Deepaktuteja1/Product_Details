@@ -3,8 +3,11 @@ package com.example.demo.service;
 
 import com.example.demo.model.Product;
 import com.example.demo.model.ProductDTO;
+import com.example.demo.model.UserInfo;
 import com.example.demo.repository.ProductRepository;
+import com.example.demo.repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +19,12 @@ public class ProductService {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private UserInfoRepository repository;
 
    // private final ModelMapper modelMapper = new ModelMapper();
 
@@ -43,16 +52,6 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-//    private ProductDTO convertToDTO(Product product) {
-//
-//        return modelMapper.map(product, ProductDTO.class);
-//    }
-//
-//    private Product convertToEntity(ProductDTO productDTO) {
-//
-//        return modelMapper.map(productDTO, Product.class);
-//    }
-
     public ProductDTO convertToDTO(Product product) {
         ProductDTO productDTO = new ProductDTO();
         productDTO.setId(product.getId());
@@ -67,5 +66,10 @@ public class ProductService {
         product.setName(productDTO.getName());
         product.setProductsku(productDTO.getProductsku());
         return product;
+    }
+    public String addUser(UserInfo userInfo) {
+        userInfo.setPassword(passwordEncoder.encode(userInfo.getPassword()));
+        repository.save(userInfo);
+        return "user added to system ";
     }
 }

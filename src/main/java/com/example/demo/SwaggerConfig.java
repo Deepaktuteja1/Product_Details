@@ -19,9 +19,9 @@ public class SwaggerConfig {
 	public OpenApiCustomizer openApiCustomizer() {
 		return openApi -> openApi.info(
 						new io.swagger.v3.oas.models.info.Info()
-								.title("Department API")
+								.title("Product API")
 								.version("1.0")
-								.description("Documentation for Department API"))
+								.description("Documentation for Product API"))
 				.addSecurityItem(new io.swagger.v3.oas.models.security.SecurityRequirement().addList("bearer-key"));
 	}
 }

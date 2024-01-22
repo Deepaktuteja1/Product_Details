@@ -32,34 +32,26 @@ public class SecurityConfig {
     @Bean
     //authentication
     public UserDetailsService userDetailsService() {
-//        UserDetails admin = User.withUsername("Basant")
-//                .password(encoder.encode("Pwd1"))
-//                .roles("ADMIN")
-//                .build();
-//        UserDetails user = User.withUsername("John")
-//                .password(encoder.encode("Pwd2"))
-//                .roles("USER","ADMIN","HR")
-//                .build();
-//        return new InMemoryUserDetailsManager(admin, user);
         return new UserInfoUserDetailsService();
     }
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http.csrf().disable()
-                .authorizeHttpRequests()
-                .requestMatchers("/products/new","/products/authenticate","/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
-                .and()
-                .authorizeHttpRequests().requestMatchers("/products/**")
-                .authenticated().and()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .authenticationProvider(authenticationProvider())
-                .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class)
-                .build();
-    }
 
+@Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
+    http.csrf(csrf -> csrf.disable())
+            .cors(cors->cors.disable())
+            .authorizeHttpRequests(auth->auth.requestMatchers("/home")
+                    .authenticated().requestMatchers("/v3/api-docs/**","swagger-ui/**","/swagger-ui.html","/products/new","/products/authenticate")
+                    .permitAll()
+                    .anyRequest()
+                    .authenticated())
+            .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
+    http.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);
+
+    return http.build();
+}
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

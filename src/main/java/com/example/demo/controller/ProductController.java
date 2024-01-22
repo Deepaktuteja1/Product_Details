@@ -125,7 +125,7 @@ public class ProductController {
         ProductDTO savedProductDTO = productService.saveProduct(productDTO);
         return new ResponseEntity<>(savedProductDTO, HttpStatus.CREATED);
     }
-
+    @Operation(summary = "To add new user", description = "Choose ROLE_ADMIN or ROLE_USER ", tags = {"Product Details"})
     @PostMapping("/new")
     public String addNewUser(@RequestBody UserInfo userInfo) {
         return productService.addUser(userInfo);
@@ -139,6 +139,7 @@ public class ProductController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    @Operation(summary = "To Generate JWT Token", description = " Generating The JWT Token", tags = {"Product Details"})
     @PostMapping("/authenticate")
     public String authenticateAndGetToken(@RequestBody AuthRequest authRequest) {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));

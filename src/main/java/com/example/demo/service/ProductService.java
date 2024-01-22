@@ -20,14 +20,6 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-
-    @Autowired
-    private UserInfoRepository repository;
-
-   // private final ModelMapper modelMapper = new ModelMapper();
-
     public List<ProductDTO> getAllProducts() {
         List<Product> products = productRepository.findAll();
         return products.stream()
@@ -66,10 +58,5 @@ public class ProductService {
         product.setName(productDTO.getName());
         product.setProductsku(productDTO.getProductsku());
         return product;
-    }
-    public String addUser(UserInfo userInfo) {
-        userInfo.setPassword(passwordEncoder.encode(userInfo.getPassword()));
-        repository.save(userInfo);
-        return "user added to system ";
     }
 }

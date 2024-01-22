@@ -42,7 +42,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
     http.csrf(csrf -> csrf.disable())
             .cors(cors->cors.disable())
             .authorizeHttpRequests(auth->auth.requestMatchers("/home")
-                    .authenticated().requestMatchers("/v3/api-docs/**","swagger-ui/**","/swagger-ui.html","/products/new","/products/authenticate")
+                    .authenticated().requestMatchers("/v3/api-docs/**","swagger-ui/**","/swagger-ui.html","/products/new","/products/authenticate","/products/get")
                     .permitAll()
                     .anyRequest()
                     .authenticated())

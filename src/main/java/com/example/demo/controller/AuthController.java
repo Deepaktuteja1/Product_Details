@@ -3,7 +3,6 @@ import com.example.demo.model.AuthRequest;
 import com.example.demo.service.AuthService;
 import com.example.demo.service.JwtService;
 import com.example.demo.model.UserInfo;
-import com.example.demo.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.service.AuthService;
 @Tag(name = "Authorization", description = "Endpoints related to user authentication and authorization")
 @RestController
 @RequestMapping("/products")

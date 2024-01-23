@@ -2,12 +2,9 @@
 package com.example.demo.service;
 
 import com.example.demo.model.Product;
-import com.example.demo.model.ProductDTO;
-import com.example.demo.model.UserInfo;
+import com.example.demo.dto.ProductDTO;
 import com.example.demo.repository.ProductRepository;
-import com.example.demo.repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

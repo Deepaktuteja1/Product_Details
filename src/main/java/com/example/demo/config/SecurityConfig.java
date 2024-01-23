@@ -1,6 +1,7 @@
 package com.example.demo.config;
 import com.example.demo.filter.JwtAuthFilter;
 
+import com.example.demo.service.UserInfoUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,7 +43,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
     http.csrf(csrf -> csrf.disable())
             .cors(cors->cors.disable())
             .authorizeHttpRequests(auth->auth.requestMatchers("/home")
-                    .authenticated().requestMatchers("/v3/api-docs/**","swagger-ui/**","/swagger-ui.html","/products/new","/products/authenticate","/products/get")
+                    .authenticated().requestMatchers("/v3/api-docs/**","swagger-ui/**","/swagger-ui.html","/products/new","/products/authenticate","/products/databaseinfo")
                     .permitAll()
                     .anyRequest()
                     .authenticated())

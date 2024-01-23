@@ -1,5 +1,7 @@
 package com.example.demo.controller;
+
 import com.example.demo.dto.ProductDTO;
+import com.example.demo.service.EmailService;
 import com.example.demo.service.JwtService;
 import com.example.demo.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
 @RestController
 @RequestMapping("/products")
 @Tag(name = "Product Details", description = "Endpoints for managing product details")
@@ -21,11 +24,16 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
+
     @Autowired
     private JwtService jwtService;
 
     @Autowired
     private AuthenticationManager authenticationManager;
+
+    @Autowired
+    private EmailService emailService; // Inject EmailService
+
     @Operation(summary = "Get all products", description = "Get a list of all products", tags = {"Product Details"})
     @GetMapping
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
@@ -50,6 +58,7 @@ public class ProductController {
         ProductDTO savedProductDTO = productService.saveProduct(productDTO);
         return new ResponseEntity<>(savedProductDTO, HttpStatus.CREATED);
     }
+
     @Operation(summary = "Delete a product by ID", description = "Delete a product based on its ID", tags = {"Product Details"})
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
@@ -57,7 +66,6 @@ public class ProductController {
         productService.deleteProduct(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
-    }
+}
 
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-@RequestMapping("/products")
+@RequestMapping("/email")
 @Tag(name = "Email Checker", description = "Endpoints to retrieve information about Email")
 @RestController
 public class EmailController {
@@ -20,7 +20,7 @@ public class EmailController {
         this.emailService = emailService;
     }
     @Operation(summary = "To send mail ", description = "Get a list of all mail", tags = {"Email Checker"})
-    @PostMapping("/send-email")
+    @PostMapping("/send")
     public String sendEmail(@RequestBody EmailRequest emailRequest) {
         String to = emailRequest.getTo();
         String subject = emailRequest.getSubject();

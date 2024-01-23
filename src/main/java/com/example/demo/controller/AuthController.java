@@ -27,12 +27,12 @@ public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
-@Operation(summary = "To add new user", description = "Choose ROLE_ADMIN or ROLE_USER ", tags = {"Product Details"})
+@Operation(summary = "To add new user", description = "Choose ROLE_ADMIN or ROLE_USER ", tags = {"Authorization"})
     @PostMapping("/new")
     public String addNewUser(@RequestBody UserInfo userInfo) {
         return authService.addUser(userInfo);
     }
-    @Operation(summary = "To Generate JWT Token", description = " Generating The JWT Token", tags = {"Product Details"})
+    @Operation(summary = "To Generate JWT Token", description = " Generating The JWT Token", tags = {"Authorization"})
     @PostMapping("/authenticate")
     public String authenticateAndGetToken(@RequestBody AuthRequest authRequest) {
         Authentication authentication = authenticationManager.authenticate(

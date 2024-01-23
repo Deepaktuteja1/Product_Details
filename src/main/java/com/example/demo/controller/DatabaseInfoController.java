@@ -12,13 +12,13 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 @Tag(name = "Database Details", description = "Endpoints to retrieve information about the connected database")
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/data")
 public class DatabaseInfoController {
 
     @Autowired
     private DataSource dataSource;
 @Operation(summary = "Get Database Information", description = "Retrieve information about the connected database.")
-    @GetMapping("/databaseinfo")
+    @GetMapping("/fetch")
     public String getDatabaseInfo() {
         try (Connection connection = dataSource.getConnection()) {
             DatabaseMetaData metaData = connection.getMetaData();

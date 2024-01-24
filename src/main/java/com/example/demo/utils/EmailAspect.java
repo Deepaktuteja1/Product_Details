@@ -16,21 +16,13 @@ public class EmailAspect {
     @Autowired
     private JavaMailSender javaMailSender;
 
-    // Define pointcut expressions for the methods in ProductController
-    @Before("execution(* com.example.demo.controller.ProductController.*(..))")
-    public void sendEmailBeforeMethodExecution(JoinPoint joinPoint) {
-        String methodName = joinPoint.getSignature().getName();
-        String to = "fake-email@example.com";
-        String subject = "Method Execution Started: " + methodName;
-        String text = "The method " + methodName + " in ProductController has started its execution.";
-        sendEmail(to, subject, text);
-    }
+
 
     @After("execution(* com.example.demo.controller.ProductController.*(..))")
     public void sendEmailAfterMethodExecution(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
         String to = "fake-email@example.com";
-        String subject = "Method Execution Completed: " + methodName;
+        String subject =  methodName;
         String text = "The method " + methodName + " in ProductController has completed its execution.";
         sendEmail(to, subject, text);
     }

@@ -41,8 +41,8 @@ public class EmailAspect {
     public void sendScheduledEmail() {
         String to = "fake-email@example.com";
         String subject = "Scheduled Email: Every 10 minutes";
-        String text = "This is a scheduled email sent every 10 minutes from ProductController.";
-        System.out.println("Every 10 minutes");
+        String text = "This is a scheduled email sent every 1 minutes from ProductController.";
+        System.out.println("Every 1 minutes");
         sendEmail(to, subject, text);
     }
 

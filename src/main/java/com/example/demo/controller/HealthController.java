@@ -11,7 +11,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 @Tag(name = "Health CheckUp", description = "Endpoints to retrieve information about the health of database")
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/actuator")
 public class HealthController {
 
     @Autowired

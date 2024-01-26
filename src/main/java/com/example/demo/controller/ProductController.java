@@ -1,7 +1,8 @@
 package com.example.demo.controller;
-
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import com.example.demo.dto.ProductDTO;
 import com.example.demo.service.ProductService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,6 +23,9 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
     @Operation(summary = "Get all products", description = "Get a list of all products", tags = {"Product Details"})
     @GetMapping
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
@@ -32,7 +36,7 @@ public class ProductController {
 
     @Operation(summary = "Get a product by ID", description = "Get a product based on its ID", tags = {"Product Details"})
     @GetMapping("/{id}")
-    @PreAuthorize("hasAuthority('ROLE_USER')")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public ResponseEntity<ProductDTO> getProductById(@PathVariable @Parameter(description = "ID of the product") Long id) {
         Optional<ProductDTO> productDTO = productService.getProductById(id);
         return productDTO.map(dto -> new ResponseEntity<>(dto, HttpStatus.OK))
@@ -54,4 +58,32 @@ public class ProductController {
         productService.deleteProduct(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+    @Operation(summary = "Save a new product by rabbitmq", description = "Save a new product by rabbitmq", tags = {"Product Details"})
+    @PostMapping("/rabbitmqpost")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    public ResponseEntity<ProductDTO> rabbitProduct(
+            @RequestBody ProductDTO productDTO) {
+
+        // Convert savedEmployeeDTO to JSON or any format you prefer
+        String message = convertProductDTOToJson(productDTO);
+
+        // Send the details to RabbitMQ queue
+        rabbitTemplate.convertAndSend("Products", message);
+
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    private String convertProductDTOToJson(ProductDTO productDTO) {
+        try {
+            // Use Jackson ObjectMapper to convert EmployeeDTO to JSON
+            ObjectMapper objectMapper = new ObjectMapper();
+            return objectMapper.writeValueAsString(productDTO);
+        } catch (Exception e) {
+            // Handle the exception appropriately (e.g., log it)
+            e.printStackTrace();
+            return ""; // Return an empty string or throw an exception based on your requirements
+        }
+    }
+
+
 }

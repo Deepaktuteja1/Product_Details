@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.demo.ProductDetailsTests" time="3.56" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.demo.ProductDetailsTests" time="4.037" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\ADeepak\.jdks\openjdk-21.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\ADeepak\AppData\Local\Temp\surefire451968692234400272\surefirebooter-20240124162741221_3.jar C:\Users\ADeepak\AppData\Local\Temp\surefire451968692234400272 2024-01-24T16-27-41_030-jvmRun1 surefire-20240124162741221_1tmp surefire_0-20240124162741221_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ADeepak\AppData\Local\Temp\surefire4407220605336586606\surefirebooter-20240125005222024_3.jar C:\Users\ADeepak\AppData\Local\Temp\surefire4407220605336586606 2024-01-25T00-52-21_840-jvmRun1 surefire-20240125005222024_1tmp surefire_0-20240125005222024_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\deepak\Product_Details\target\test-classes;C:\deepak\Product_Details\target\classes;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.1\spring-boot-starter-data-jpa-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.1\spring-boot-starter-aop-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.1\spring-boot-starter-jdbc-3.2.1.jar;C:\Users\ADeepak\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-jdbc\6.1.2\spring-jdbc-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\ADeepak\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\ADeepak\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\ADeepak\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\ADeepak\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\ADeepak\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\ADeepak\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\ADeepak\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\ADeepak\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\ADeepak\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\ADeepak\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\ADeepak\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\ADeepak\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\ADeepak\.m2\repository\org\springframework\data\spring-data-jpa\3.2.1\spring-data-jpa-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\data\spring-data-commons\3.2.1\spring-data-commons-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-orm\6.1.2\spring-orm-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-tx\6.1.2\spring-tx-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-beans\6.1.2\spring-beans-6.1.2.jar;C:\Users\ADeepak\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\ADeepak\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-aspects\6.1.2\spring-aspects-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.1\spring-boot-starter-web-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.1\spring-boot-starter-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot\3.2.1\spring-boot-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.1\spring-boot-autoconfigure-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.1\spring-boot-starter-logging-3.2.1.jar;C:\Users\ADeepak\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\ADeepak\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\ADeepak\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\ADeepak\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\ADeepak\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\ADeepak\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.1\spring-boot-starter-json-3.2.1.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.1\spring-boot-starter-tomcat-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\ADeepak\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\ADeepak\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-web\6.1.2\spring-web-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-webmvc\6.1.2\spring-webmvc-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar;C:\Users\ADeepak\.m2\repository\com\mysql\mysql-connector-j\8.1.0\mysql-connector-j-8.1.0.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.1\spring-boot-starter-test-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-test\3.2.1\spring-boot-test-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.1\spring-boot-test-autoconfigure-3.2.1.jar;C:\Users\ADeepak\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\ADeepak\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\ADeepak\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\ADeepak\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\ADeepak\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\ADeepak\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\ADeepak\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\ADeepak\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\ADeepak\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\ADeepak\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\ADeepak\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\ADeepak\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ADeepak\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\ADeepak\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ADeepak\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\ADeepak\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\ADeepak\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\ADeepak\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\ADeepak\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\ADeepak\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\ADeepak\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\ADeepak\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\ADeepak\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-core\6.1.2\spring-core-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-jcl\6.1.2\spring-jcl-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-test\6.1.2\spring-test-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\ADeepak\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\ADeepak\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.0.3\springdoc-openapi-starter-webmvc-ui-2.0.3.jar;C:\Users\ADeepak\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.0.3\springdoc-openapi-starter-webmvc-api-2.0.3.jar;C:\Users\ADeepak\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.0.3\springdoc-openapi-starter-common-2.0.3.jar;C:\Users\ADeepak\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.8\swagger-core-jakarta-2.2.8.jar;C:\Users\ADeepak\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\ADeepak\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.8\swagger-annotations-jakarta-2.2.8.jar;C:\Users\ADeepak\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.8\swagger-models-jakarta-2.2.8.jar;C:\Users\ADeepak\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.3\jackson-dataformat-yaml-2.15.3.jar;C:\Users\ADeepak\.m2\repository\org\webjars\swagger-ui\4.17.1\swagger-ui-4.17.1.jar;C:\Users\ADeepak\.m2\repository\org\webjars\webjars-locator-core\0.55\webjars-locator-core-0.55.jar;C:\Users\ADeepak\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\ADeepak\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.1\spring-boot-starter-security-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-aop\6.1.2\spring-aop-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\springframework\security\spring-security-config\6.2.1\spring-security-config-6.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\security\spring-security-core\6.2.1\spring-security-core-6.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\security\spring-security-crypto\6.2.1\spring-security-crypto-6.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\security\spring-security-web\6.2.1\spring-security-web-6.2.1.jar;C:\Users\ADeepak\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\ADeepak\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\ADeepak\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\ADeepak\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.1\spring-boot-starter-actuator-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.1\spring-boot-actuator-autoconfigure-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.1\spring-boot-actuator-3.2.1.jar;C:\Users\ADeepak\.m2\repository\io\micrometer\micrometer-observation\1.12.1\micrometer-observation-1.12.1.jar;C:\Users\ADeepak\.m2\repository\io\micrometer\micrometer-commons\1.12.1\micrometer-commons-1.12.1.jar;C:\Users\ADeepak\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.1\micrometer-jakarta9-1.12.1.jar;C:\Users\ADeepak\.m2\repository\io\micrometer\micrometer-core\1.12.1\micrometer-core-1.12.1.jar;C:\Users\ADeepak\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\ADeepak\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\ADeepak\.m2\repository\org\springframework\boot\spring-boot-starter-mail\3.2.1\spring-boot-starter-mail-3.2.1.jar;C:\Users\ADeepak\.m2\repository\org\springframework\spring-context-support\6.1.2\spring-context-support-6.1.2.jar;C:\Users\ADeepak\.m2\repository\org\eclipse\angus\jakarta.mail\2.0.2\jakarta.mail-2.0.2.jar;C:\Users\ADeepak\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ADeepak\AppData\Local\Temp\surefire451968692234400272\surefirebooter-20240124162741221_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADeepak\AppData\Local\Temp\surefire4407220605336586606\surefirebooter-20240125005222024_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-29"/>
@@ -59,54 +59,54 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testGetProductByIdNotFound" classname="com.example.demo.ProductDetailsTests" time="0.197">
-    <system-out><![CDATA[16:27:44,721 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
-16:27:44,728 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Here is a list of configurators discovered as a service, by rank: 
-16:27:44,728 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
-16:27:44,728 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
-16:27:44,728 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
-16:27:44,742 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
-16:27:44,743 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
-16:27:44,746 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
-16:27:44,751 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
-16:27:44,751 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
-16:27:44,751 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 5 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
-16:27:44,751 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
-16:27:44,752 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
-16:27:44,753 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-16:27:44,753 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/deepak/Product_Details/target/classes/logback.xml]
-16:27:44,974 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
-16:27:44,975 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-16:27:45,029 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
-16:27:45,029 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
-16:27:45,029 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
-16:27:45,029 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE-AUDIT]
-16:27:45,029 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-16:27:45,056 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1631047534 - No compression will be used
-16:27:45,058 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1631047534 - Will use the pattern logs/archived/debug.%d{yyyy-MM-dd}.%i.log for the active file
-16:27:45,061 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/archived/debug.%d{yyyy-MM-dd}.%i.log'.
-16:27:45,061 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - Roll-over at midnight.
-16:27:45,062 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - Setting initial period to 2024-01-23T18:28:06.085Z
-16:27:45,062 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
-16:27:45,062 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
-16:27:45,068 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - Active log file name: logs/debug.log
-16:27:45,068 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - File property is set to [logs/debug.log]
-16:27:45,070 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE-ERROR] not referenced. Skipping further processing.
-16:27:45,071 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [logging.level.com.appsdeveloperblog] to DEBUG
-16:27:45,081 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [logging.level.com.appsdeveloperblog] to false
-16:27:45,082 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE-AUDIT] to Logger[logging.level.com.appsdeveloperblog]
-16:27:45,082 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[logging.level.com.appsdeveloperblog]
-16:27:45,082 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.autoconfigure] to INFO
-16:27:45,082 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.autoconfigure.condition] to INFO
-16:27:45,084 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
-16:27:45,084 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
-16:27:45,084 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@53b8afea - End of configuration.
-16:27:45,100 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6c302a1d - Registering current configuration as safe fallback point
-16:27:45,100 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 348 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+  <testcase name="testGetProductByIdNotFound" classname="com.example.demo.ProductDetailsTests" time="0.283">
+    <system-out><![CDATA[00:52:25,820 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+00:52:25,825 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Here is a list of configurators discovered as a service, by rank: 
+00:52:25,825 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+00:52:25,825 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+00:52:25,825 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+00:52:25,844 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+00:52:25,844 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+00:52:25,847 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+00:52:25,852 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+00:52:25,852 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+00:52:25,852 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 5 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+00:52:25,852 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+00:52:25,856 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+00:52:25,856 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+00:52:25,857 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/deepak/Product_Details/target/classes/logback.xml]
+00:52:26,112 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+00:52:26,112 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+00:52:26,170 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+00:52:26,170 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+00:52:26,170 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+00:52:26,170 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE-AUDIT]
+00:52:26,170 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+00:52:26,201 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1631047534 - No compression will be used
+00:52:26,202 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1631047534 - Will use the pattern logs/archived/debug.%d{yyyy-MM-dd}.%i.log for the active file
+00:52:26,207 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/archived/debug.%d{yyyy-MM-dd}.%i.log'.
+00:52:26,207 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - Roll-over at midnight.
+00:52:26,209 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - Setting initial period to 2024-01-23T18:28:06.085Z
+00:52:26,209 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+00:52:26,209 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7942a854 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+00:52:26,215 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - Active log file name: logs/debug.log
+00:52:26,215 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - File property is set to [logs/debug.log]
+00:52:26,216 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE-ERROR] not referenced. Skipping further processing.
+00:52:26,219 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [logging.level.com.appsdeveloperblog] to DEBUG
+00:52:26,230 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [logging.level.com.appsdeveloperblog] to false
+00:52:26,231 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE-AUDIT] to Logger[logging.level.com.appsdeveloperblog]
+00:52:26,232 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[logging.level.com.appsdeveloperblog]
+00:52:26,232 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.autoconfigure] to INFO
+00:52:26,232 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.autoconfigure.condition] to INFO
+00:52:26,232 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+00:52:26,232 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+00:52:26,232 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@53b8afea - End of configuration.
+00:52:26,237 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6c302a1d - Registering current configuration as safe fallback point
+00:52:26,238 |-INFO in ch.qos.logback.classic.util.ContextInitializer@cf67838 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 382 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
 
-2024-01-24 16:27:45 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2024-01-24 16:27:45 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2024-01-24 16:27:45 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2024-01-25 00:52:26 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
 ]]></system-out>
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\ADeepak\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
@@ -114,28 +114,28 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="testSaveProduct" classname="com.example.demo.ProductDetailsTests" time="0.152">
-    <system-out><![CDATA[2024-01-24 16:27:46 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+  <testcase name="testSaveProduct" classname="com.example.demo.ProductDetailsTests" time="0.136">
+    <system-out><![CDATA[2024-01-25 00:52:27 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
 ]]></system-out>
   </testcase>
   <testcase name="testGetProductById" classname="com.example.demo.ProductDetailsTests" time="0.006">
-    <system-out><![CDATA[2024-01-24 16:27:46 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+    <system-out><![CDATA[2024-01-25 00:52:27 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteProduct" classname="com.example.demo.ProductDetailsTests" time="0.004">
-    <system-out><![CDATA[2024-01-24 16:27:46 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+  <testcase name="testDeleteProduct" classname="com.example.demo.ProductDetailsTests" time="0.005">
+    <system-out><![CDATA[2024-01-25 00:52:27 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testGetAllProducts" classname="com.example.demo.ProductDetailsTests" time="0.016">
-    <system-out><![CDATA[2024-01-24 16:27:46 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2024-01-24 16:27:46 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+  <testcase name="testGetAllProducts" classname="com.example.demo.ProductDetailsTests" time="0.015">
+    <system-out><![CDATA[2024-01-25 00:52:27 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-01-25 00:52:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
 ]]></system-out>
   </testcase>
 </testsuite>

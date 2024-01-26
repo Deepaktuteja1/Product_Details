@@ -40,7 +40,7 @@ public class SecurityConfig {
                 .cors(cors->cors.disable())
                 .authorizeHttpRequests(auth->auth.requestMatchers("/home")
                         .authenticated().requestMatchers("/v3/api-docs/**","swagger-ui/**","/swagger-ui.html","/auth/new","/auth/authenticate","/data/fetch","/actuator/**","/actuator/health","/email/send")
-                        .permitAll()
+                .permitAll()
                         .anyRequest()
                         .authenticated())
                 .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

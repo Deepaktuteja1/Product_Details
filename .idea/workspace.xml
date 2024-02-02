@@ -196,10 +196,30 @@
       <option name="project" value="LOCAL" />
       <updated>1706870862939</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit Changes">
+      <option name="closed" value="true" />
+      <created>1706871323492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706871323492</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'github/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/compiler.xml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;README.md&#10;#&#9;target/classes/application.properties&#10;#&#9;target/classes/com/example/demo/config/RabbitMqConfig.class&#10;#&#9;target/classes/com/example/demo/controller/ProductController.class&#10;#&#9;target/classes/com/example/demo/listener/RabbitMqListener.class&#10;#&#9;target/classes/com/example/demo/utils/CustomHealthIndicator.class&#10;#&#9;target/classes/com/example/demo/utils/EmailAspect.class&#10;#&#9;target/classes/com/example/demo/utils/Schedular.class&#10;#&#9;target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst&#10;#&#9;target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst&#10;#&#9;target/springboot-mysql-docker.jar&#10;#&#9;target/springboot-mysql-docker.jar.original&#10;#&#9;target/surefire-reports/TEST-com.example.demo.ProductDetailsTests.xml&#10;#&#9;target/surefire-reports/com.example.demo.ProductDetailsTests.txt" />
     <MESSAGE value="Commit Changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit Changes" />
   </component>

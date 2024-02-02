@@ -1,11 +1,12 @@
 package com.example.demo.dto;
-
 import com.example.demo.model.Product;
 import lombok.Data;
 
+import java.io.Serializable;
+
 
 @Data
-public class ProductDTO {
+public class ProductDTO implements Serializable {
 
     private Long id;
     private String name;
@@ -21,13 +22,13 @@ public class ProductDTO {
     }
 
 
-public static ProductDTO fromEntity(Product product) {
-    return new ProductDTO(
-            product.getId(),
-            product.getName(),
-            product.getProductsku()
-    );
-}
+    public static ProductDTO fromEntity(Product product) {
+        return new ProductDTO(
+                product.getId(),
+                product.getName(),
+                product.getProductsku()
+        );
+    }
 
     public static Product toEntity(ProductDTO productDTO) {
         Product product = new Product();

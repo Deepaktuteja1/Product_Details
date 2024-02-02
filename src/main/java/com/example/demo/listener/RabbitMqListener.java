@@ -3,19 +3,25 @@ package com.example.demo.listener;
 import com.example.demo.dto.ProductDTO;
 import com.example.demo.service.ProductService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RabbitMqListener {
+public class  RabbitMqListener {
 
-    @Autowired
-    private ProductService productService;
+    private static final Logger logger = LoggerFactory.getLogger(RabbitMqListener.class);
+
+    private final ProductService productService;
+
+    public RabbitMqListener(ProductService productService) {
+        this.productService = productService;
+    }
 
     @RabbitListener(queues = "Products")
     public void receiveMessage(String message) {
-        System.out.println("Received message: " + message);
+        logger.info("Received message: {}", message);
 
         // Convert JSON message to ProductDTO
         ProductDTO receivedProduct = convertJsonToProductDTO(message);
@@ -24,27 +30,34 @@ public class RabbitMqListener {
         saveProductToDatabase(receivedProduct);
     }
 
-    private ProductDTO convertJsonToProductDTO(String json) {
+    public ProductDTO convertJsonToProductDTO(String json) {
         try {
             // Use Jackson ObjectMapper to convert JSON to ProductDTO
             ObjectMapper objectMapper = new ObjectMapper();
             return objectMapper.readValue(json, ProductDTO.class);
         } catch (Exception e) {
             // Handle the exception appropriately (e.g., log it)
-            e.printStackTrace();
+            logger.error("Failed to convert JSON to ProductDTO", e);
             return null; // Return null or throw an exception based on your requirements
         }
     }
 
-    private void saveProductToDatabase(ProductDTO productDTO) {
+    public void saveProductToDatabase(ProductDTO productDTO) {
         if (productDTO != null) {
+            logger.debug("Received ProductDTO: {}", productDTO);
+
+            // Set product ID to null explicitly for new products
+            productDTO.setId(null);
+
             // Save the received productDTO to the database using ProductService
             productService.saveProduct(productDTO);
-            System.out.println("Saved product to the database: " + productDTO.toString());
+
+            logger.info("Saved product to the database: {}", productDTO);
             // Add your additional processing logic here if needed
         } else {
-            System.out.println("Failed to save product to the database. ProductDTO is null.");
+            logger.warn("Failed to save product to the database. ProductDTO is null.");
             // Handle the case where deserialization failed or productDTO is null
         }
     }
 }
+

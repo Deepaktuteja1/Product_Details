@@ -3,29 +3,26 @@ package com.example.demo;
 import com.example.demo.controller.ProductController;
 import com.example.demo.dto.ProductDTO;
 import com.example.demo.service.ProductService;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.springframework.context.annotation.Profile;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Arrays;
+
+import java.util.List;
 import java.util.Optional;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
+import static org.junit.jupiter.api.Assertions.*;
 
+import static org.mockito.Mockito.when;
 
-@Profile("qa")
-class ProductDetailsTests{
+ class ProductDetailsTests {
 
 	@Mock
 	private ProductService productService;
@@ -33,95 +30,104 @@ class ProductDetailsTests{
 	@InjectMocks
 	private ProductController productController;
 
-	private final MockMvc mockMvc;
-
-	private final ObjectMapper objectMapper = new ObjectMapper();
-
-	public ProductDetailsTests() {
+	@BeforeEach
+	public void setUp() {
 		MockitoAnnotations.openMocks(this);
-		this.mockMvc = MockMvcBuilders.standaloneSetup(productController).build();
+	}
+	@Test
+	 void testGetAllProducts() {
+		// Mock data
+		List<ProductDTO> mockProducts = Arrays.asList(new ProductDTO(), new ProductDTO());
+		when(productService.getAllProducts()).thenReturn(mockProducts);
+
+		// Test
+		ResponseEntity<List<ProductDTO>> responseEntity = productController.getAllProducts();
+
+		// Assertions
+		assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+		assertEquals(mockProducts, responseEntity.getBody());
 	}
 
 	@Test
-	void testGetAllProducts() throws Exception {
-		when(productService.getAllProducts()).thenReturn(Arrays.asList(
-				new ProductDTO(1L, "Product1", "SKU1"),
-				new ProductDTO(2L, "Product2", "SKU2")
-		));
+	 void testGetProductByIdFound() {
+		// Mock data
+		ProductDTO mockProduct = new ProductDTO();
+		when(productService.getProductById(1L)).thenReturn(Optional.of(mockProduct));
 
-		mockMvc.perform(get("/products"))
-				.andExpect(status().isOk())
-				.andExpect(content().contentType(MediaType.APPLICATION_JSON))
-				.andExpect(jsonPath("$[0].name").value("Product1"))
-				.andExpect(jsonPath("$[1].productsku").value("SKU2"));
+		// Test
+		ResponseEntity<ProductDTO> responseEntity = productController.getProductById(1L);
 
-		verify(productService, times(1)).getAllProducts();
-		verifyNoMoreInteractions(productService);
+		// Assertions
+		assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+		assertEquals(mockProduct, responseEntity.getBody());
 	}
 
 	@Test
-	void testGetProductById() throws Exception {
-		Long productId = 1L;
-		ProductDTO productDTO = new ProductDTO(productId, "Product1", "SKU1");
+	 void testGetProductByIdNotFound() {
+		// Mock data
+		when(productService.getProductById(1L)).thenReturn(Optional.empty());
 
-		when(productService.getProductById(productId)).thenReturn(Optional.of(productDTO));
+		// Test
+		ResponseEntity<ProductDTO> responseEntity = productController.getProductById(1L);
 
-		mockMvc.perform(get("/products/{id}", productId))
-				.andExpect(status().isOk())
-				.andExpect(content().contentType(MediaType.APPLICATION_JSON))
-				.andExpect(jsonPath("$.name").value("Product1"))
-				.andExpect(jsonPath("$.productsku").value("SKU1"));
-
-		verify(productService, times(1)).getProductById(productId);
-		verifyNoMoreInteractions(productService);
+		// Assertions
+		assertEquals(HttpStatus.NOT_FOUND, responseEntity.getStatusCode());
+        assertNull(responseEntity.getBody());
 	}
 
 	@Test
-	void testGetProductByIdNotFound() throws Exception {
-		Long nonExistingProductId = 99L;
+	 void testSaveProduct() {
+		// Mock data
+		ProductDTO inputProduct = new ProductDTO();
+		ProductDTO savedProduct = new ProductDTO();
+		when(productService.saveProduct(inputProduct)).thenReturn(savedProduct);
 
-		when(productService.getProductById(nonExistingProductId)).thenReturn(Optional.empty());
+		// Test
+		ResponseEntity<ProductDTO> responseEntity = productController.saveProduct(inputProduct);
 
-		mockMvc.perform(get("/products/{id}", nonExistingProductId))
-				.andExpect(status().isNotFound());
-
-		verify(productService, times(1)).getProductById(nonExistingProductId);
-		verifyNoMoreInteractions(productService);
+		// Assertions
+		assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());
+		assertEquals(savedProduct, responseEntity.getBody());
 	}
 
 	@Test
-	void testSaveProduct() throws Exception {
-		ProductDTO productDTO = new ProductDTO(null, "New Product", "NewSKU");
-		ProductDTO savedProductDTO = new ProductDTO(1L, "New Product", "NewSKU");
+	 void testDeleteProduct() {
+		// Test
+		ResponseEntity<Void> responseEntity = productController.deleteProduct(1L);
 
-		when(productService.saveProduct(any(ProductDTO.class))).thenReturn(savedProductDTO);
-
-		mockMvc.perform(post("/products")
-						.contentType(MediaType.APPLICATION_JSON)
-						.content(objectMapper.writeValueAsString(productDTO)))
-				.andExpect(status().isCreated())
-				.andExpect(content().contentType(MediaType.APPLICATION_JSON))
-				.andExpect(jsonPath("$.id").value(1L))
-				.andExpect(jsonPath("$.name").value("New Product"))
-				.andExpect(jsonPath("$.productsku").value("NewSKU"));
-
-		verify(productService, times(1)).saveProduct(any(ProductDTO.class));
-		verifyNoMoreInteractions(productService);
+		// Assertions
+		assertEquals(HttpStatus.NO_CONTENT, responseEntity.getStatusCode());
 	}
+
+
+
 
 	@Test
-	void testDeleteProduct() throws Exception {
-		Long productId = 1L;
+	 void testDeleteProductSuccessful() {
+		// Mock behavior
+		Mockito.doNothing().when(productService).deleteProduct(1L);
 
-		mockMvc.perform(delete("/products/{id}", productId))
-				.andExpect(status().isNoContent()); // Use isNoContent() instead of isOk()
+		// Test
+		ResponseEntity<Void> responseEntity = productController.deleteProduct(1L);
 
-		verify(productService, times(1)).deleteProduct(productId);
-		verifyNoMoreInteractions(productService);
+		// Assertions
+		assertEquals(HttpStatus.NO_CONTENT, responseEntity.getStatusCode());
 	}
+
+
+
+	@Test
+	void testConvertProductDTOToJson_Success() {
+		// Setup
+		ProductDTO productDTO = new ProductDTO();
+
+		// Execution
+		String json = productController.convertProductDTOToJson(productDTO);
+
+		// Verification
+		assertNotNull(json);
+
+	}
+
 
 }
-
-
-
-

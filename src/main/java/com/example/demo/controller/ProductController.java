@@ -6,7 +6,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
+
+
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -15,16 +17,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+
 @RestController
 @RequestMapping("/products")
 @Tag(name = "Product Details", description = "Endpoints for managing product details")
 public class ProductController {
 
-    @Autowired
-    private ProductService productService;
 
-    @Autowired
-    private RabbitTemplate rabbitTemplate;
+    private final ProductService productService;
+    private final RabbitTemplate rabbitTemplate;
+
+    public ProductController(ProductService productService, RabbitTemplate rabbitTemplate) {
+        this.productService = productService;
+        this.rabbitTemplate = rabbitTemplate;
+    }
 
     @Operation(summary = "Get all products", description = "Get a list of all products", tags = {"Product Details"})
     @GetMapping
@@ -33,6 +39,7 @@ public class ProductController {
         List<ProductDTO> products = productService.getAllProducts();
         return new ResponseEntity<>(products, HttpStatus.OK);
     }
+
 
     @Operation(summary = "Get a product by ID", description = "Get a product based on its ID", tags = {"Product Details"})
     @GetMapping("/{id}")
@@ -43,6 +50,9 @@ public class ProductController {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
+
+
+
     @Operation(summary = "Save a new product", description = "Save a new product", tags = {"Product Details"})
     @PostMapping
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
@@ -51,6 +61,7 @@ public class ProductController {
         return new ResponseEntity<>(savedProductDTO, HttpStatus.CREATED);
     }
 
+
     @Operation(summary = "Delete a product by ID", description = "Delete a product based on its ID", tags = {"Product Details"})
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
@@ -58,6 +69,8 @@ public class ProductController {
         productService.deleteProduct(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+
     @Operation(summary = "Save a new product by rabbitmq", description = "Save a new product by rabbitmq", tags = {"Product Details"})
     @PostMapping("/rabbitmqpost")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
@@ -73,7 +86,7 @@ public class ProductController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-    private String convertProductDTOToJson(ProductDTO productDTO) {
+    public String convertProductDTOToJson(ProductDTO productDTO) {
         try {
             // Use Jackson ObjectMapper to convert EmployeeDTO to JSON
             ObjectMapper objectMapper = new ObjectMapper();

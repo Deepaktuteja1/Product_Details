@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,8 +13,13 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 @RequestMapping("/actuator")
 public class HealthController {
 
-    @Autowired
-    private HealthIndicator customHealthIndicator;
+
+    private  final HealthIndicator customHealthIndicator;
+
+
+    public HealthController(HealthIndicator customHealthIndicator) {
+        this.customHealthIndicator= customHealthIndicator;
+    }
 
     @Operation(summary = "Get Health Status", description = "Returns the health status of the application.")
     @ApiResponses(value = {

@@ -9,9 +9,11 @@ com\example\demo\service\JwtService.class
 com\example\demo\repository\UserInfoRepository.class
 com\example\demo\utils\Schedular.class
 com\example\demo\config\SwaggerConfig.class
+com\example\demo\exception\ResourceNotFoundException.class
 com\example\demo\controller\AuthController.class
 com\example\demo\controller\HealthController.class
 com\example\demo\model\UserInfoUserDetails.class
+com\example\demo\exception\GlobalExceptionHandler.class
 com\example\demo\service\AuthService.class
 com\example\demo\config\RabbitMqConfig.class
 com\example\demo\service\ProductService.class

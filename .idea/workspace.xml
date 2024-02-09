@@ -4,153 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22d7ac83-25c0-4053-b84d-171fac85aa63" name="Changes" comment="Commit Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ProductDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ProductDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/UserInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/ProductDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/ProductDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/DatabaseInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/DatabaseInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/dto/ProductDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dto/ProductDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/AuthRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/AuthRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/UserInfoUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/UserInfoUserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/UserInfoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repository/UserInfoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/JwtService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserInfoUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserInfoUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/utils/EmailAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/utils/EmailAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SwaggerConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SwaggerConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SwaggerConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SwaggerConfig.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/AuthController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/AuthController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/AuthController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/AuthController.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/DatabaseInfoController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/DatabaseInfoController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/DatabaseInfoController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/DatabaseInfoController.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/HealthController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/HealthController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/HealthController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/HealthController.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/ProductController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/ProductController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/ProductController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/ProductController.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.controller/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/ProductDTO.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/ProductDTO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/ProductDTO.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/ProductDTO.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.dto/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/ResourceNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/ResourceNotFoundException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/ResourceNotFoundException.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/ResourceNotFoundException.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/RabbitMqListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/RabbitMqListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/RabbitMqListener.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/RabbitMqListener.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.listener/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/AuthRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/AuthRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/AuthRequest.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/AuthRequest.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/Product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/Product.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/Product.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfo.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfo.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfoUserDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfoUserDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfoUserDetails.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/UserInfoUserDetails.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.model/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/AuthService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/AuthService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/AuthService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/AuthService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/ProductService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/ProductService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/ProductService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/ProductService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/CustomHealthIndicator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/CustomHealthIndicator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/CustomHealthIndicator.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/CustomHealthIndicator.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/EmailAspect.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/EmailAspect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/EmailAspect.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/EmailAspect.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/Schedular.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/Schedular.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/Schedular.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/Schedular.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.utils/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/.sonar_lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-mysql-docker.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-mysql-docker.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.CustomHealthIndicatorTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.CustomHealthIndicatorTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DatabaseInfoControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DatabaseInfoControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.EmailAspectTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.EmailAspectTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.HealthControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.HealthControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.JwtServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.JwtServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDTOTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDTOTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDetailsTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDetailsTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqConfigTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqConfigTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqListenerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqListenerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SchedularTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SchedularTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SwaggerConfigTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SwaggerConfigTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthControllerTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthServiceTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthServiceTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.CustomHealthIndicatorTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.CustomHealthIndicatorTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DatabaseInfoControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DatabaseInfoControllerTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.EmailAspectTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.EmailAspectTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.HealthControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.HealthControllerTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.JwtServiceTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.JwtServiceTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDTOTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDTOTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDetailsTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDetailsTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductServiceTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductServiceTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqConfigTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqConfigTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqListenerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqListenerTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.SwaggerConfigTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.SwaggerConfigTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsServiceTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsServiceTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/AuthControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/AuthControllerTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/JwtServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/JwtServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/ProductServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/ProductServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/RabbitMqListenerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/RabbitMqListenerTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/SchedularTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/SchedularTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/SwaggerConfigTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/SwaggerConfigTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/UserInfoUserDetailsServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/UserInfoUserDetailsServiceTests.class" afterDir="false" />
-    </list>
+    <list default="true" id="22d7ac83-25c0-4053-b84d-171fac85aa63" name="Changes" comment="Commit Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,47 +35,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AuthControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthControllerTests.testAuthenticateAndGetToken_UnsuccessfulAuthentication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomHealthIndicatorTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DatabaseInfoControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DatabaseInfoControllerTests.testGetDatabaseInfo_CustomExceptionHandling.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmailAspectTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HealthControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JwtServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JwtServiceTests.testGetSignKey.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JwtServiceTests.testIsTokenExpired.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductDTOTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductDetailsTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductDetailsTests.testDeleteProductNotFound.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductDetailsTests.testSaveProduct_Unauthorized.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductServiceTests.deleteProduct_WithInvalidId_ShouldThrowResourceNotFoundException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductServiceTests.getProductById_WithNonexistentId_ShouldReturnEmptyOptional.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RabbitMqConfigTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RabbitMqListenerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RabbitMqListenerTests.testReceiveMessage_NullProductDTO.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SchedularTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SchedularTests.testSendScheduledEmail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwaggerConfigTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserInfoTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserInfoUserDetailsServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserInfoUserDetailsTests.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [spring-boot:run,-DskipsTests...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AuthControllerTests.executor": "Run",
+    "JUnit.AuthControllerTests.testAuthenticateAndGetToken_UnsuccessfulAuthentication.executor": "Run",
+    "JUnit.AuthServiceTests.executor": "Run",
+    "JUnit.CustomHealthIndicatorTests.executor": "Run",
+    "JUnit.DatabaseInfoControllerTests.executor": "Run",
+    "JUnit.DatabaseInfoControllerTests.testGetDatabaseInfo_CustomExceptionHandling.executor": "Run",
+    "JUnit.EmailAspectTests.executor": "Run",
+    "JUnit.HealthControllerTests.executor": "Run",
+    "JUnit.JwtServiceTests.executor": "Run",
+    "JUnit.JwtServiceTests.testGetSignKey.executor": "Run",
+    "JUnit.JwtServiceTests.testIsTokenExpired.executor": "Run",
+    "JUnit.ProductControllerTests.executor": "Run",
+    "JUnit.ProductDTOTests.executor": "Run",
+    "JUnit.ProductDetailsTests.executor": "Run",
+    "JUnit.ProductDetailsTests.testDeleteProductNotFound.executor": "Run",
+    "JUnit.ProductDetailsTests.testSaveProduct_Unauthorized.executor": "Run",
+    "JUnit.ProductServiceTests.deleteProduct_WithInvalidId_ShouldThrowResourceNotFoundException.executor": "Run",
+    "JUnit.ProductServiceTests.executor": "Run",
+    "JUnit.ProductServiceTests.getProductById_WithNonexistentId_ShouldReturnEmptyOptional.executor": "Run",
+    "JUnit.ProductTests.executor": "Run",
+    "JUnit.RabbitMqConfigTests.executor": "Run",
+    "JUnit.RabbitMqListenerTests.executor": "Run",
+    "JUnit.RabbitMqListenerTests.testReceiveMessage_NullProductDTO.executor": "Run",
+    "JUnit.SchedularTests.executor": "Run",
+    "JUnit.SchedularTests.testSendScheduledEmail.executor": "Run",
+    "JUnit.SwaggerConfigTests.executor": "Run",
+    "JUnit.UserInfoTests.executor": "Run",
+    "JUnit.UserInfoUserDetailsServiceTests.executor": "Run",
+    "JUnit.UserInfoUserDetailsTests.executor": "Run",
+    "Maven.demo [clean].executor": "Run",
+    "Maven.demo [install].executor": "Run",
+    "Maven.demo [spring-boot:run,-DskipsTests...].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn spring-boot:run -DskipsTests -Dspring-boot.run.profiles=dev" />
@@ -358,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706871475713</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit Changes">
+      <option name="closed" value="true" />
+      <created>1707457603452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707457603452</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

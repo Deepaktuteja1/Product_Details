@@ -10,6 +10,7 @@ C:\deepak\Product_Details\src\main\java\com\example\demo\controller\AuthControll
 C:\deepak\Product_Details\src\main\java\com\example\demo\service\JwtService.java
 C:\deepak\Product_Details\src\main\java\com\example\demo\config\SecurityConfig.java
 C:\deepak\Product_Details\src\main\java\com\example\demo\service\UserInfoUserDetailsService.java
+C:\deepak\Product_Details\src\main\java\com\example\demo\config\CacheConfig.java
 C:\deepak\Product_Details\src\main\java\com\example\demo\utils\CustomHealthIndicator.java
 C:\deepak\Product_Details\src\main\java\com\example\demo\model\AuthRequest.java
 C:\deepak\Product_Details\src\main\java\com\example\demo\config\RabbitMqConfig.java

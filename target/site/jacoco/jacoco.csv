@@ -17,6 +17,7 @@ ProductDetails,com.example.demo.model,UserInfo,34,217,23,17,0,14,19,18,0,17
 ProductDetails,com.example.demo.model,AuthRequest,109,15,22,0,2,3,18,3,7,3
 ProductDetails,com.example.demo.model,Product,21,146,8,22,0,6,9,18,1,11
 ProductDetails,com.example.demo.model,UserInfoUserDetails,0,40,0,0,0,14,0,8,0,8
+ProductDetails,com.example.demo.config,CacheConfig,0,47,0,0,0,12,0,3,0,3
 ProductDetails,com.example.demo.config,RabbitMqConfig,0,21,0,0,0,4,0,4,0,4
 ProductDetails,com.example.demo.config,SecurityConfig,0,119,0,0,0,20,0,10,0,10
 ProductDetails,com.example.demo.config,SwaggerConfig,19,5,0,0,4,2,1,2,1,2

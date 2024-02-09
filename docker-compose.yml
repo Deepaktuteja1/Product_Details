@@ -1,0 +1,53 @@
+version: '3'
+services:
+  app:
+    image: springboot
+    ports:
+      - "8080:8080"
+    links:
+      - redis
+
+    depends_on:
+      - database
+      - rabbitmq
+      - fakesmtp
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://database:3306/ecommerce_db
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: deepak2002
+      SPRING_DATASOURCE_DRIVER-CLASS-NAME: com.mysql.cj.jdbc.Driver
+      SPRING_JPA_HIBERNATE_DDL-AUTO: update
+      SPRING_JPA_OPEN-IN-VIEW: "false"
+      SPRING_DEBUG: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_SHOW-DETAILS: always
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+
+
+  database:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: deepak2002
+      MYSQL_DATABASE: ecommerce_db
+    ports:
+      - "3307:3306"
+
+  rabbitmq:
+    image: rabbitmq:latest
+    ports:
+      - "5672:5672"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+
+  fakesmtp:
+    image: djfarrelly/maildev
+    ports:
+      - "25:25"
+    environment:
+      - EMAIL_STORAGE=/var/mail

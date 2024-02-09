@@ -3,19 +3,23 @@
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableCaching
 @EnableScheduling
 @SpringBootApplication
-<span class="fc" id="L12">public class ProductDetails {</span>
+@EntityScan(basePackages = &quot;com.example.demo&quot;)
+@EnableJpaRepositories(basePackages = &quot;com.example.demo.repository&quot;)
+<span class="fc" id="L16">public class ProductDetails {</span>
 
 	public static void main(String[] args) {
-<span class="nc" id="L15">		SpringApplication.run(ProductDetails.class, args);</span>
-<span class="nc" id="L16">	}</span>
+<span class="nc" id="L19">		SpringApplication.run(ProductDetails.class, args);</span>
+<span class="nc" id="L20">	}</span>
 
 }
 
 
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

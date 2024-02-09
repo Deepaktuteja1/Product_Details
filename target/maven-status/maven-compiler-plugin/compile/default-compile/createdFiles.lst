@@ -7,6 +7,7 @@ com\example\demo\listener\RabbitMqListener.class
 com\example\demo\dto\ProductDTO.class
 com\example\demo\service\JwtService.class
 com\example\demo\repository\UserInfoRepository.class
+com\example\demo\config\CacheConfig.class
 com\example\demo\utils\Schedular.class
 com\example\demo\config\SwaggerConfig.class
 com\example\demo\exception\ResourceNotFoundException.class

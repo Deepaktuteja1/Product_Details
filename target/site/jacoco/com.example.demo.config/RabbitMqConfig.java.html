@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
     @Bean
     public Binding binding(Queue queue, DirectExchange directExchange) {
 
-<span class="fc" id="L28">        return BindingBuilder.bind(queue).to(directExchange).with(&quot;myRoutingKey&quot;);</span>
+<span class="nc" id="L28">        return BindingBuilder.bind(queue).to(directExchange).with(&quot;myRoutingKey&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

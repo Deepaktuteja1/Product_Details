@@ -21,10 +21,10 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     private final JwtService jwtService;
     private final UserInfoUserDetailsService userDetailsService;
 
-<span class="fc" id="L24">    public JwtAuthFilter(JwtService jwtService, UserInfoUserDetailsService userDetailsService) {</span>
-<span class="fc" id="L25">        this.jwtService = jwtService;</span>
-<span class="fc" id="L26">        this.userDetailsService = userDetailsService;</span>
-<span class="fc" id="L27">    }</span>
+<span class="nc" id="L24">    public JwtAuthFilter(JwtService jwtService, UserInfoUserDetailsService userDetailsService) {</span>
+<span class="nc" id="L25">        this.jwtService = jwtService;</span>
+<span class="nc" id="L26">        this.userDetailsService = userDetailsService;</span>
+<span class="nc" id="L27">    }</span>
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {

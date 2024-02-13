@@ -25,48 +25,48 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
     private final JwtAuthFilter authFilter;
 
-<span class="fc" id="L28">    public SecurityConfig(JwtAuthFilter authFilter) {</span>
-<span class="fc" id="L29">        this.authFilter = authFilter;</span>
-<span class="fc" id="L30">    }</span>
+<span class="nc" id="L28">    public SecurityConfig(JwtAuthFilter authFilter) {</span>
+<span class="nc" id="L29">        this.authFilter = authFilter;</span>
+<span class="nc" id="L30">    }</span>
 
     @Bean
     public UserDetailsService userDetailsService(UserInfoRepository userInfoRepository) {
-<span class="fc" id="L34">        return new UserInfoUserDetailsService(userInfoRepository);</span>
+<span class="nc" id="L34">        return new UserInfoUserDetailsService(userInfoRepository);</span>
     }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-<span class="fc" id="L40">        http.csrf(csrf -&gt; csrf.disable())</span>
-<span class="fc" id="L41">                .cors(cors-&gt;cors.disable())</span>
-<span class="fc" id="L42">                .authorizeHttpRequests(auth-&gt;auth.requestMatchers(&quot;/home&quot;)</span>
-<span class="fc" id="L43">                        .authenticated().requestMatchers(&quot;/v3/api-docs/**&quot;,&quot;swagger-ui/**&quot;,&quot;/swagger-ui.html&quot;,&quot;/auth/new&quot;,&quot;/auth/authenticate&quot;,&quot;/data/fetch&quot;,&quot;/actuator/**&quot;,&quot;/actuator/health&quot;,&quot;/email/send&quot;)</span>
-<span class="fc" id="L44">                        .permitAll()</span>
-<span class="fc" id="L45">                        .anyRequest()</span>
-<span class="fc" id="L46">                        .authenticated())</span>
-<span class="fc" id="L47">                .sessionManagement(session-&gt;session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));</span>
+<span class="nc" id="L40">        http.csrf(csrf -&gt; csrf.disable())</span>
+<span class="nc" id="L41">                .cors(cors-&gt;cors.disable())</span>
+<span class="nc" id="L42">                .authorizeHttpRequests(auth-&gt;auth.requestMatchers(&quot;/home&quot;)</span>
+<span class="nc" id="L43">                        .authenticated().requestMatchers(&quot;/v3/api-docs/**&quot;,&quot;swagger-ui/**&quot;,&quot;/swagger-ui.html&quot;,&quot;/auth/new&quot;,&quot;/auth/authenticate&quot;,&quot;/data/fetch&quot;,&quot;/actuator/**&quot;,&quot;/actuator/health&quot;,&quot;/email/send&quot;)</span>
+<span class="nc" id="L44">                        .permitAll()</span>
+<span class="nc" id="L45">                        .anyRequest()</span>
+<span class="nc" id="L46">                        .authenticated())</span>
+<span class="nc" id="L47">                .sessionManagement(session-&gt;session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));</span>
 
-<span class="fc" id="L49">        http.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);</span>
+<span class="nc" id="L49">        http.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);</span>
 
-<span class="fc" id="L51">        return http.build();</span>
+<span class="nc" id="L51">        return http.build();</span>
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-<span class="fc" id="L56">        return new BCryptPasswordEncoder();</span>
+<span class="nc" id="L56">        return new BCryptPasswordEncoder();</span>
     }
 
     @Bean
     public AuthenticationProvider authenticationProvider(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder) {
-<span class="fc" id="L61">        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();</span>
-<span class="fc" id="L62">        authenticationProvider.setUserDetailsService(userDetailsService);</span>
-<span class="fc" id="L63">        authenticationProvider.setPasswordEncoder(passwordEncoder);</span>
-<span class="fc" id="L64">        return authenticationProvider;</span>
+<span class="nc" id="L61">        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();</span>
+<span class="nc" id="L62">        authenticationProvider.setUserDetailsService(userDetailsService);</span>
+<span class="nc" id="L63">        authenticationProvider.setPasswordEncoder(passwordEncoder);</span>
+<span class="nc" id="L64">        return authenticationProvider;</span>
     }
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
-<span class="fc" id="L69">        return config.getAuthenticationManager();</span>
+<span class="nc" id="L69">        return config.getAuthenticationManager();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

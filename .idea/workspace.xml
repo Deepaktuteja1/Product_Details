@@ -4,7 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22d7ac83-25c0-4053-b84d-171fac85aa63" name="Changes" comment="Commit Changes" />
+    <list default="true" id="22d7ac83-25c0-4053-b84d-171fac85aa63" name="Changes" comment="Commit Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/hpa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/hpa.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/serviceaccount.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/serviceaccount.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/tests/test-connection.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/tests/test-connection.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/CacheConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/CacheConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot-mysql-docker.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mysql-docker.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot-mysql-docker.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mysql-docker.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthServiceTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.CustomHealthIndicatorTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DatabaseInfoControllerTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.EmailAspectTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.HealthControllerTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDTOTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDetailsTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductServiceTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqConfigTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqListenerTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SchedularTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SwaggerConfigTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsServiceTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthControllerTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthServiceTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthServiceTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.CustomHealthIndicatorTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DatabaseInfoControllerTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.EmailAspectTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.HealthControllerTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDTOTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDetailsTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductServiceTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqConfigTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqListenerTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.SchedularTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.SwaggerConfigTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsServiceTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsTests.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,49 +93,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AuthControllerTests.executor": "Run",
-    "JUnit.AuthControllerTests.testAuthenticateAndGetToken_UnsuccessfulAuthentication.executor": "Run",
-    "JUnit.AuthServiceTests.executor": "Run",
-    "JUnit.CustomHealthIndicatorTests.executor": "Run",
-    "JUnit.DatabaseInfoControllerTests.executor": "Run",
-    "JUnit.DatabaseInfoControllerTests.testGetDatabaseInfo_CustomExceptionHandling.executor": "Run",
-    "JUnit.EmailAspectTests.executor": "Run",
-    "JUnit.HealthControllerTests.executor": "Run",
-    "JUnit.JwtServiceTests.executor": "Run",
-    "JUnit.JwtServiceTests.testGetSignKey.executor": "Run",
-    "JUnit.JwtServiceTests.testIsTokenExpired.executor": "Run",
-    "JUnit.ProductControllerTests.executor": "Run",
-    "JUnit.ProductDTOTests.executor": "Run",
-    "JUnit.ProductDetailsTests.executor": "Run",
-    "JUnit.ProductDetailsTests.testDeleteProductNotFound.executor": "Run",
-    "JUnit.ProductDetailsTests.testSaveProduct_Unauthorized.executor": "Run",
-    "JUnit.ProductServiceTests.deleteProduct_WithInvalidId_ShouldThrowResourceNotFoundException.executor": "Run",
-    "JUnit.ProductServiceTests.executor": "Run",
-    "JUnit.ProductServiceTests.getProductById_WithNonexistentId_ShouldReturnEmptyOptional.executor": "Run",
-    "JUnit.ProductTests.executor": "Run",
-    "JUnit.RabbitMqConfigTests.executor": "Run",
-    "JUnit.RabbitMqListenerTests.executor": "Run",
-    "JUnit.RabbitMqListenerTests.testReceiveMessage_NullProductDTO.executor": "Run",
-    "JUnit.SchedularTests.executor": "Run",
-    "JUnit.SchedularTests.testSendScheduledEmail.executor": "Run",
-    "JUnit.SwaggerConfigTests.executor": "Run",
-    "JUnit.UserInfoTests.executor": "Run",
-    "JUnit.UserInfoUserDetailsServiceTests.executor": "Run",
-    "JUnit.UserInfoUserDetailsTests.executor": "Run",
-    "Maven.demo [clean].executor": "Run",
-    "Maven.demo [install:help].executor": "Run",
-    "Maven.demo [install].executor": "Run",
-    "Maven.demo [spring-boot:run,-DskipsTests...].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/k8s"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AuthControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthControllerTests.testAuthenticateAndGetToken_UnsuccessfulAuthentication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomHealthIndicatorTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DatabaseInfoControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DatabaseInfoControllerTests.testGetDatabaseInfo_CustomExceptionHandling.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmailAspectTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HealthControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JwtServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JwtServiceTests.testGetSignKey.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JwtServiceTests.testIsTokenExpired.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductDTOTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductDetailsTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductDetailsTests.testDeleteProductNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductDetailsTests.testSaveProduct_Unauthorized.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTests.deleteProduct_WithInvalidId_ShouldThrowResourceNotFoundException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTests.getProductById_WithNonexistentId_ShouldReturnEmptyOptional.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RabbitMqConfigTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RabbitMqListenerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RabbitMqListenerTests.testReceiveMessage_NullProductDTO.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SchedularTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SchedularTests.testSendScheduledEmail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwaggerConfigTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserInfoTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserInfoUserDetailsServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserInfoUserDetailsTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [install:help].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [spring-boot:run,-DskipsTests...].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/k8s&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn spring-boot:run -DskipsTests -Dspring-boot.run.profiles=dev" />
@@ -239,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707826757416</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit Changes">
+      <option name="closed" value="true" />
+      <created>1707829263043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707829263043</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

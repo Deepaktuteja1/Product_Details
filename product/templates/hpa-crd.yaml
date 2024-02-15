@@ -1,0 +1,47 @@
+#apiVersion: apiextensions.k8s.io/v1
+#kind: CustomResourceDefinition
+#metadata:
+#  name: horizontalpodautoscalers.autoscaling.k8s.io
+#spec:
+#  group: autoscaling.k8s.io
+#  names:
+#    kind: HorizontalPodAutoscaler
+#    listKind: HorizontalPodAutoscalerList
+#    plural: horizontalpodautoscalers
+#    singular: horizontalpodautoscaler
+#  scope: Namespaced
+#  versions:
+#    - name: v2beta2
+#      served: true
+#      storage: true
+#      schema:
+#        openAPIV3Schema:
+#          type: object
+#          properties:
+#            apiVersion:
+#              type: string
+#            kind:
+#              type: string
+#            metadata:
+#              type: object
+#            spec:
+#              type: object
+#              properties:
+#                maxReplicas:
+#                  type: integer
+#                  format: int32
+#                minReplicas:
+#                  type: integer
+#                  format: int32
+#                scaleTargetRef:
+#                  type: object
+#                  properties:
+#                    apiVersion:
+#                      type: string
+#                    kind:
+#                      type: string
+#                    name:
+#                      type: string
+#                targetCPUUtilizationPercentage:
+#                  type: integer
+#                  format: int32

@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22d7ac83-25c0-4053-b84d-171fac85aa63" name="Changes" comment="Commit Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/hpa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/hpa.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/ingress.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/serviceaccount.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/serviceaccount.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/tests/test-connection.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/tests/test-connection.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/CacheConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/CacheConfig.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/RabbitMqConfig.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.config/SecurityConfig.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.exception/GlobalExceptionHandler.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.filter/JwtAuthFilter.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/JwtService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo.service/UserInfoUserDetailsService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.demo/ProductDetails.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-mysql-docker.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mysql-docker.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-mysql-docker.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mysql-docker.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.AuthServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.CustomHealthIndicatorTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DatabaseInfoControllerTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.EmailAspectTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.HealthControllerTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDTOTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductDetailsTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductServiceTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.ProductTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqConfigTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.RabbitMqListenerTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SchedularTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.SwaggerConfigTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsServiceTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.UserInfoUserDetailsTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthControllerTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthServiceTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.AuthServiceTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.CustomHealthIndicatorTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DatabaseInfoControllerTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.EmailAspectTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.HealthControllerTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDTOTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductDetailsTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductServiceTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.ProductTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqConfigTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.RabbitMqListenerTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.SchedularTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.SwaggerConfigTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsServiceTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.UserInfoUserDetailsTests.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="22d7ac83-25c0-4053-b84d-171fac85aa63" name="Changes" comment="Commit Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707829263043</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit Changes">
+      <option name="closed" value="true" />
+      <created>1707982810274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707982810274</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
